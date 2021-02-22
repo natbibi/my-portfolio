@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+    color: black;
+    background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
+    font-family: 'Roboto', sans-serif;
+  }
+
+section {
+    background: rgba(255,255,255,0.5);
+  }  
