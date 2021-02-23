@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'DotGothic16', sans-serif; */
 
 body {
     color: black;
     background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
     font-family: 'Roboto', sans-serif;
+    text-align: center;
   }
 
 section {
     background: rgba(255,255,255,0.5);
   }  
+
+  h1 {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 35px;
+    color: darkslateblue;
+
+  }
+
+  .img-circle {
+    border-radius: 60%;
+    border: 3px solid hotpink;
+  }
