@@ -9,8 +9,25 @@ body {
     text-align: center;
   }
 
-section {
+  ul#mynav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(245, 88, 206, 0.4);
+  }
+ 
+  li.nav-only {
+    display: inline;
+    padding: 4px;
+  }
+
+section#introduction{
     background: rgba(255,255,255,0.5);
+    margin: 40px 140px;
+    border: 4px dotted plum;
+    padding-bottom: 30px;
   }  
 
   h1 {
