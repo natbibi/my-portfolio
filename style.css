@@ -12,7 +12,8 @@ body {
     text-align: center;
   }
 
-  #mynav {
+  /* NAV BAR */ 
+  #nav-position {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,11 +22,22 @@ body {
     right: 0;
     padding-right: 20px;
   }
+
+  a#nav-visual {
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+  ul {
+    text-transform: uppercase;
+    font-size: smaller;
+  }
  
   li.nav-only {
     display: inline;
     padding: 4px;
-  }
+  } 
+  /* END OF NAVBAR */
 
 section#introduction{
     background: rgba(255,255,255,0.5);
