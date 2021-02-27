@@ -1,43 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 /* font-family: 'Roboto', sans-serif;
+font-family: 'Dosis', sans-serif;
 font-family: 'DotGothic16', sans-serif; */
 
 body {
     color: black;
     background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
     text-align: center;
   }
 
-  ul#mynav {
+  /* NAV BAR */ 
+  #nav-position {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    background: rgb(245, 88, 206, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 20px;
+  }
+
+  a#nav-visual {
+    text-decoration: none;
+    color: darkslateblue;
+    padding-bottom: 10px;
+  }
+
+  a:hover {
+    border-bottom: 3px transparent solid;
+    transition: border  0.5s;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+
+  ul {
+    text-transform: uppercase;
+    font-size: 1rem;
   }
  
   li.nav-only {
     display: inline;
-    padding: 4px;
-  }
+    padding: 8px;
+  } 
+
+  /* Intro and Body */
 
 section#introduction{
     background: rgba(255,255,255,0.5);
     margin: 40px 140px;
     border: 4px dotted plum;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }  
 
   h1 {
     font-family: 'DotGothic16', sans-serif;
     font-size: 35px;
     color: darkslateblue;
-
+    padding-top: 50px;
   }
 
   .img-circle {
     border-radius: 60%;
     border: 3px solid hotpink;
+  }
+
+/* Font Awesome Icons */
+
+  i.fab {
+    font-size: 1.3rem;
+    color: darkslateblue;
+    transition: color 0.3s ease;
   }
