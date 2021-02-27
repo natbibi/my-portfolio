@@ -26,6 +26,7 @@ body {
   a#nav-visual {
     text-decoration: none;
     padding-left: 10px;
+    color: darkslateblue;
   }
 
   ul {
@@ -37,13 +38,13 @@ body {
     display: inline;
     padding: 4px;
   } 
-  /* END OF NAVBAR */
+  /* Intro and Body */
 
 section#introduction{
     background: rgba(255,255,255,0.5);
     margin: 40px 140px;
     border: 4px dotted plum;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }  
 
   h1 {
@@ -51,10 +52,21 @@ section#introduction{
     font-size: 35px;
     color: darkslateblue;
     padding-top: 50px;
-
   }
 
   .img-circle {
     border-radius: 60%;
     border: 3px solid hotpink;
+  }
+
+/* Font Awesome Icons */
+
+  i.fab {
+    font-size: 3rem;
+    color: rgb(235, 148, 191);
+    transition: color 0.3s ease;
+  }
+
+  i.fab:hover {
+    font-size: 3.5rem;
   }
