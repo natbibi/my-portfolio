@@ -25,19 +25,29 @@ body {
 
   a#nav-visual {
     text-decoration: none;
-    padding-left: 10px;
     color: darkslateblue;
+    padding-bottom: 10px;
+  }
+
+  a:hover {
+    border-bottom: 3px transparent solid;
+    transition: border  0.5s;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   ul {
     text-transform: uppercase;
-    font-size: smaller;
+    font-size: 1rem;
   }
  
   li.nav-only {
     display: inline;
-    padding: 4px;
+    padding: 8px;
   } 
+
   /* Intro and Body */
 
 section#introduction{
@@ -62,11 +72,7 @@ section#introduction{
 /* Font Awesome Icons */
 
   i.fab {
-    font-size: 3rem;
-    color: rgb(235, 148, 191);
+    font-size: 1.3rem;
+    color: darkslateblue;
     transition: color 0.3s ease;
-  }
-
-  i.fab:hover {
-    font-size: 3.5rem;
   }
