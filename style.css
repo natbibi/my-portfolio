@@ -5,74 +5,204 @@ font-family: 'Dosis', sans-serif;
 font-family: 'DotGothic16', sans-serif; */
 
 body {
-    color: black;
-    background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
-    font-family: 'Dosis', sans-serif;
-    font-size: larger;
-    text-align: center;
-  }
+  --accent-color: darkslateblue;
+  --text-color: darkslateblue;
+  --transition-delay: 1s;
+  
+  background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
+  font-family: 'Dosis', sans-serif;
+  font-size: larger;
+  text-align: center;
+  transition: var(--transition-delay);
+  overflow: hidden;
+}
 
-  /* NAV BAR */ 
+body.dark {
+  --accent-color: rgb(253, 209, 216);
+  --text-color: rgb(253, 209, 216);
+  
+  background: url(https://wallpapercave.com/wp/GjrkLhP.jpg);
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+/* NAV BAR */ 
+
+#nav-position {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
+}
+
+a#nav-visual {
+  text-decoration: none;
+  color: var(--text-color); 
+  padding-bottom: 7px;
+}
+
+a:hover {
+  border-bottom: 3px transparent solid;
+  transition: border  0.5s;
+  transition-property: border-color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+ul {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+li.nav-only {
+  display: inline;
+  padding: 8px;
+} 
+
+/* Intro and Body */
+
+section#introduction{
+  background: rgba(255,255,255,0.5);
+  margin: 23.45px 60px;
+  border: 4px dotted plum;
+  border-radius: 1.5em;
+  padding: 10px;
+}  
+
+h1 {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 35px;
+  color: var(--text-color);
+  padding-top: 63px;
+  transition: var(--transition-delay);
+}
+
+.dark h1 {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 35px;
+  color: black;
+  padding-top: 63px;
+  transition: var(--transition-delay);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px hotpink;
+}
+
+.img-circle {
+  border-radius: 60%;
+  border: 3px solid hotpink;
+  transition: var(--transition-delay);
+}
+
+.dark .img-circle {
+  box-shadow: 0 0 15px hotpink;
+  transition: var(--transition-delay);
+}
+
+/* Font Awesome Icon - GITHUB */
+
+i.fab {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  /* transition: color 0.3s ease; */
+}
+
+
+/* Dark Mode - Font Awesome Icon SUN, MOON, TOGGLE */
+
+i.fas:hover,
+i.fas:focus {
+  transform: scale(1.1);
+}
+
+.theme-toggle-button,
+.sun-mode,
+.moon-mode {
+  color: var(--accent-color);
+  padding: 18px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: var(--transition-delay);
+  transform: scale(1);
+}
+
+.sun-moon-container {
+  --rotation: 0;
+
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 200vmin;   /* 200% of width - responsive on all screen sizes */
+  transform: rotate(calc(var(--rotation) * 1deg));
+  transition: transform var(--transition-delay);
+}
+
+.sun-mode,
+.moon-mode {
+  position: absolute;
+  transition: fill, var(--transition-delay);
+  fill: var(--accent-color);
+} 
+
+.sun-mode {
+  top: 3%;
+  opacity: 1;
+}
+
+.dark .sun-mode {
+  opacity: 0;
+}
+
+.moon-mode {
+  bottom: 3%;
+  opacity: 0;
+  transform: rotate(180deg);
+} 
+
+.dark .moon-mode {
+  opacity: 1;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 400px) {
   #nav-position {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-right: 20px;
-  }
-
-  a#nav-visual {
-    text-decoration: none;
-    color: darkslateblue;
-    padding-bottom: 10px;
-  }
-
-  a:hover {
-    border-bottom: 3px transparent solid;
-    transition: border  0.5s;
-    transition-property: border-color;
-    transition-duration: 0.7s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    width: 100%;
   }
 
   ul {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
- 
-  li.nav-only {
-    display: inline;
-    padding: 8px;
-  } 
 
-  /* Intro and Body */
+  .theme-toggle-button {
+    position: fixed;
+    right: 0;
+  }
 
-section#introduction{
-    background: rgba(255,255,255,0.5);
-    margin: 40px 140px;
-    border: 4px dotted plum;
-    padding-bottom: 10px;
+  .sun-mode {
+    top: 4%;
+  }
+
+  .moon-mode {
+    bottom: 4%;
   }  
 
   h1 {
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 35px;
-    color: darkslateblue;
-    padding-top: 50px;
+    font-size: 1.9rem;
+  }
+  .dark h1 {
+    font-size: 1.9rem;
   }
 
-  .img-circle {
-    border-radius: 60%;
-    border: 3px solid hotpink;
+  section#introduction {
+    margin-left: 0;
+    margin-right: 0;
   }
-
-/* Font Awesome Icons */
-
-  i.fab {
-    font-size: 1.3rem;
-    color: darkslateblue;
-    transition: color 0.3s ease;
-  }
+}
