@@ -1,43 +1,22 @@
-# react-template
-A template for building a React app. 
-
-    # Includes: 
-     
-    devDependencies:
-        "@babel/core": "^7.13.15",
-        "@babel/plugin-proposal-class-properties": "^7.13.0",
-        "@babel/plugin-transform-runtime": "^7.13.15",
-        "@babel/preset-env": "^7.13.15",
-        "@babel/preset-react": "^7.13.13",
-        "babel-loader": "^8.2.2",
-        "css-loader": "^5.2.1",
-        "html-webpack-plugin": "^5.3.1",
-        "style-loader": "^2.0.0",
-        "webpack": "^5.31.2",
-        "webpack-cli": "^4.6.0",
-        "webpack-dev-server": "^3.11.2"
-
-    dependencies: 
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+# my-portfolio
+****
+[![Netlify Status](https://api.netlify.com/api/v1/badges/286cf9ba-4749-4316-8fb1-050292679350/deploy-status)](https://app.netlify.com/sites/nat-portfolio/deploys)
 
 
-## For development:  
-`npm install`  
-`npm run dev`  
+# Installation & Usage
+****
+Visit at : 
 
-## For production:  
-`npm run build`   
-`touch netlify.toml`  
+# Changelog
+****
+- [x] Set up different pages, nav bar, heading and introduction :D
+- [x] Add dark mode!
+- [ ] Switch to React
 
-    # in netlify.toml
-      
-    [build]  
-        command = "npm run build" # how to trigger a build  
-        publish = "/build" # what folder to publish    
-    [[redirects]]   
-        from = "/*" # redirect any path  
-        to = "/index.html" # to this html page   
-        status = 200 # with this status   
-       
- Deploy as usual on Netlify!
+
+# Wins & Challenges
+****
+## Wins
+- Successfully added dark mode to portfolio!
+
+## Challenges
