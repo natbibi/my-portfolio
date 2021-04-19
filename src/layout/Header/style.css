@@ -1,0 +1,30 @@
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    position: fixed;
+    right: 0;
+    align-items: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.current {
+    color: black;
+    font-weight: bolder;
+    background-color: black;
+}
+
+span#back-button{
+    border: none;
+    background-color: none;
+    font-size: 2rem;
+}
+
