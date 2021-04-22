@@ -16,7 +16,7 @@ const Projects = () => {
         <>
             <div className="intro-container">
                 <h1>👩🏻‍💻 Projects</h1>
-                <h5>A selection of my best work. More available on Github.</h5>
+                <h5>A selection of my best work. More available on <a href={'./contact'}>Github.</a></h5>
             </div>
             <div className="projects-container">
                 {renderProjects()}
