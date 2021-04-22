@@ -11,7 +11,8 @@ const ProjectCards = ({ projectData }) => {
       <div className="center-align">
       <img src={projectData.image}/>
       </div>
-      <h4>{projectData.github}</h4>
+      <h4><a href={projectData.netlify}>Visit Website</a></h4>
+      <h4><a href={projectData.github}>Visit Repo</a></h4>
     </div >
   )
 }
