@@ -1,5 +1,6 @@
 .container {
-    width: 1000px;
+    width: 92%;
+    border: solid 2px red;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -126,3 +127,13 @@
     text-decoration: none;
     color: #414141;
 }
+
+@media only screen and (max-width: 800px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }

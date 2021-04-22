@@ -73,3 +73,9 @@ img {
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-repeat: repeat-y;
+  }
+}
