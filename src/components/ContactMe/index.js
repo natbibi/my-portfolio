@@ -7,19 +7,19 @@ const ContactMe = () => {
     return (
 
 
-        <div class="container">
+        <div className="container">
 
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="icon">
-                        <i class="fas fa-envelope-square" aria-hidden="true"></i>
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                        <div className="icon">
+                        <i className="fas fa-envelope-square" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="face face2">
-                    <div class="content">
+                <div className="face face2">
+                    <div className="content">
                         <h3>
                             <a href="mailto: natalie.pang@me.com" target="_blank">natalie.pang@me.com</a>
                         </h3>
@@ -28,17 +28,17 @@ const ContactMe = () => {
                 </div>
             </div>
 
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="icon">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                        <div className="icon">
+                            <i className="fa fa-twitter-square" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="face face2">
-                    <div class="content">
+                <div className="face face2">
+                    <div className="content">
                         <h3>
                             <a href="https://twitter.com/natalieyehh" target="_blank">@natalieyehh</a>
                         </h3>
@@ -47,16 +47,16 @@ const ContactMe = () => {
                 </div>
             </div>
 
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="icon">
-                            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                        <div className="icon">
+                            <i className="fa fa-github-square" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="face face2">
-                    <div class="content">
+                <div className="face face2">
+                    <div className="content">
                         <h3>
                             <a href="https://github.com/natbibi" target="_blank">@natbibi</a>
                         </h3>
