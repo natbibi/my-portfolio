@@ -1,6 +1,5 @@
 .container {
     width: 92%;
-    border: solid 2px red;
     position: relative;
     display: flex;
     justify-content: space-between;
