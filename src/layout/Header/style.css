@@ -15,6 +15,7 @@ a {
 }
 
 a:hover {
+    transform: none;
     text-decoration: none;
     border-bottom: 3px transparent solid;
     transition: border  0.5s;
