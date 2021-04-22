@@ -3,19 +3,23 @@ import { ProjectCards } from '../../components'
 import projectData from './data'
 
 const Projects = () => {
+    const [project, setProject] = useState(projectData);
 
-    const Project = projectData.map((projectData) => (
-        <ProjectCards key={projectData.id} className="project-container" projectData={projectData} />
-    ))
+
+    const renderProjects = () => {
+        return project.map(p =>
+          <ProjectCards projectData={p} key={p.id}/>
+        );
+      }
 
     return (
-        <>
-            <h1>My Projects</h1>
-            <div className="slider">
-                {Project}
-            </div>
-        </>
-    )
-}
+        <main aria-label="main">
+            <h1>Projects</h1>
+            <div className="projects-container">
+             { renderProjects ()}
+             </div>
+        </main>
+    );
+};
 
 export default Projects;
