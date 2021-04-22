@@ -40,7 +40,7 @@ const ContactMe = () => {
                 <div className="face face2">
                     <div className="content">
                         <h3>
-                            <a href="https://twitter.com/natalieyehh" target="_blank">@natalieyehh</a>
+                            <a href="https://twitter.com/" target="_blank">@</a>
                         </h3>
                         <p>This is where I follow my favourite topics and network with different social groups.</p>
                     </div>
