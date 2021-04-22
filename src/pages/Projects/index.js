@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProjectCards } from '../../components'
+import { ProjectCards, ScrollToTop } from '../../components'
 import projectData from './data'
 
 const Projects = () => {
@@ -21,6 +21,7 @@ const Projects = () => {
             <main className="projects-container">
                 {renderProjects()}
             </main>
+            <ScrollToTop />
         </>
     );
 };
