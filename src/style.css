@@ -4,34 +4,72 @@
 font-family: 'Dosis', sans-serif;
 font-family: 'DotGothic16', sans-serif; */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   --accent-color: darkslateblue;
   --text-color: darkslateblue;
   --transition-delay: 1s;
   
   background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Dosis', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-x: auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
 }
 
- /* 
-.project-container {
-  border: solid 2px red;
-  /* position: relative; 
-  width: 100%; 
-  height: 80vh; 
+.intro-container {
+  margin: 0;
+  padding: 2rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid 2px orange; */
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.projects-container{
+  position: relative; 
+  width: 100%;
   box-sizing: border-box;
   margin: 0; 
-  padding: 0;  
+  padding: 4rem;  
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.slider {
+.project-container {
   border: solid 2px purple;
-  min-width: 80%;
-  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  padding: 10px;
+  background-color: rgba(255, 233, 243, 0.6);
+} 
+
+img {
+  max-width: 800px;
+  max-height: 500px;
+  border-radius: 10px;
+  border: 10px solid rgb(250, 206, 237);
+}
+
+.center-align {
   display: flex;
   justify-content: center;
-} 
-*/
+}
