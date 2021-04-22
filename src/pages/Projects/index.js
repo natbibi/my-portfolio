@@ -8,17 +8,20 @@ const Projects = () => {
 
     const renderProjects = () => {
         return project.map(p =>
-          <ProjectCards projectData={p} key={p.id}/>
+            <ProjectCards projectData={p} key={p.id} />
         );
-      }
+    }
 
     return (
-        <main aria-label="main">
-            <h1>Projects</h1>
+        <>
+            <div className="intro-container">
+                <h1>👩🏻‍💻 Projects</h1>
+                <h5>A selection of my best work. More available on Github.</h5>
+            </div>
             <div className="projects-container">
-             { renderProjects ()}
-             </div>
-        </main>
+                {renderProjects()}
+            </div>
+        </>
     );
 };
 
