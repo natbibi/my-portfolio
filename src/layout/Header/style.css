@@ -10,12 +10,19 @@ nav {
 }
 
 a {
+    color: rgb(139, 53, 250);
     text-decoration: none;
 }
 
 a:hover {
-    color: black;
-}
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    transition: border  0.5s;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
 
 .current {
     color: black;
