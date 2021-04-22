@@ -4,7 +4,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     color: grey;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0.5rem;
     z-index: 1;
@@ -42,6 +42,5 @@ button#back-button{
     nav {
         margin-top: 10px;
         width: 80%;
-        position: absolute;
     }
 }
