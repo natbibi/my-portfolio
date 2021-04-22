@@ -7,12 +7,16 @@ const ProjectCards = ({ projectData }) => {
 
   return (
     <div className="project-container">
-      <h3>{projectData.name}</h3>
-      <div className="center-align">
-      <img src={projectData.image} className="project-img"/>
+      <div>
+        <h3>{projectData.name}</h3>
+        <button className="visit-website"><a href={projectData.netlify} target="_blank">Visit Website  <i className="fas fa-external-link-alt"></i></a></button>
+        <button className="visit-repo"><a href={projectData.github} target="_blank">Visit Repo  <i className="fas fa-external-link-alt"></i></a></button>
       </div>
-      <h4><a href={projectData.netlify}>Visit Website</a></h4>
-      <h4><a href={projectData.github}>Visit Repo</a></h4>
+
+      <div>
+        <img src={projectData.image} className="project-img" />
+      </div>
+
     </div >
   )
 }
