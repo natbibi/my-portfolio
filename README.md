@@ -19,13 +19,20 @@ To run on your local machine:
 5. Set up new file structure
 6. Add components BackButton, ContactMe, ProjectCards
 8. Add project details and contact details
+9. Add media queries for responsiveness on mobile devices
+10. Create scroll to top button
 
+# Bugs
+- [x] Responsiveness on mobile devices
+- [x] Nav bar hard to clicke when scrolled down (element overlap)
+- [ ] Footer on Home page not at bottom
 
 # Wins & Challenges
 
 ## Wins
 - Successfully added dark mode to portfolio!  
 - Smooth switchover from vanillajs over to react! Original portfolio can still be found on 'original' branch.  
+- Responsive on mobile devices!!
 
 ## Challenges
 - About me section - I find it hard to write about myself!   
