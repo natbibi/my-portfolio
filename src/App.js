@@ -11,7 +11,7 @@ function App(){
     return(
       <>
         <Header />
-        <img src={profilepic} alt="Animated Natalie" className="img-circle" />
+        <img src={profilepic} alt="logo / Animated avatar of Natalie" className="img-circle" />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />

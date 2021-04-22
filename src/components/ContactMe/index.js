@@ -7,13 +7,13 @@ const ContactMe = () => {
     return (
 
 
-        <div className="container">
+        <main className="container">
 
             <div className="card">
                 <div className="face face1">
                     <div className="content">
                         <div className="icon">
-                        <i className="fas fa-envelope-square" aria-hidden="true"></i>
+                        <i className="fas fa-envelope-square"></i>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const ContactMe = () => {
                 <div className="face face1">
                     <div className="content">
                         <div className="icon">
-                            <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                            <i className="fa fa-twitter-square"></i>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const ContactMe = () => {
                 <div className="face face1">
                     <div className="content">
                         <div className="icon">
-                            <i className="fa fa-github-square" aria-hidden="true"></i>
+                            <i className="fa fa-github-square"></i>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const ContactMe = () => {
                 </div>
             </div>
 
-      </div>
+      </main>
 
 
     )

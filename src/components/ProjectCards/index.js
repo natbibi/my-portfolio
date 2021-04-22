@@ -6,7 +6,7 @@ const ProjectCards = ({ projectData }) => {
 
 
   return (
-    <div className="project-container">
+    <main className="project-container">
       <div>
         <h3>{projectData.name}</h3>
         <p className="project-description">{projectData.description}</p>
@@ -18,7 +18,7 @@ const ProjectCards = ({ projectData }) => {
         <img src={projectData.image} className="project-img" />
       </div>
 
-    </div >
+    </main >
   )
 }
 

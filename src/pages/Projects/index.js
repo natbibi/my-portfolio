@@ -14,13 +14,13 @@ const Projects = () => {
 
     return (
         <>
-            <div className="intro-container">
+            <heading className="intro-container">
                 <h1>👩🏻‍💻 Projects</h1>
                 <h5>A selection of my best work. More available on <a href={'./contact'}>Github.</a></h5>
-            </div>
-            <div className="projects-container">
+            </heading>
+            <main className="projects-container">
                 {renderProjects()}
-            </div>
+            </main>
         </>
     );
 };

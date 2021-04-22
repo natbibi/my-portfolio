@@ -6,7 +6,7 @@ import './style.css'
 
 const Header = () => {
     return (
-        <nav>
+        <nav role="navigation">
             <BackButton />
             <NavLink exact to="/" activeClassName="current">Home</NavLink>
             <NavLink to="/projects" activeClassName="current">Projects</NavLink>
