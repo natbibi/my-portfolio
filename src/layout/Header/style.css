@@ -1,0 +1,45 @@
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+    position: fixed;
+    right: 0;
+    top: 0.5rem;
+}
+
+a {
+    color: rgb(139, 53, 250);
+    text-decoration: none;
+}
+
+a:hover {
+    transform: none;
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    transition: border  0.5s;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+
+.current {
+    color: black;
+    font-weight: bolder;
+    background-color: black;
+}
+
+button#back-button{
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        width: 100%;
+        position: static;
+    }
+  }
