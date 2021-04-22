@@ -50,8 +50,8 @@ h5 {
 .projects-container{
   position: relative; 
   width: 100%;
-  box-sizing: border-box;
-  margin: 0; 
+  /* box-sizing: border-box; */
+  margin: 0 auto; 
   padding: 4rem;  
   display: flex;
   flex-direction: column;
@@ -93,6 +93,7 @@ p.project-description {
   border: 3px solid hotpink;
   max-height: 70px;
   max-width: 70px;
+  z-index: 1;
 }
 
 .center-align {
@@ -117,7 +118,33 @@ i.fa-external-link-alt {
 }
 
 @media only screen and (max-width: 800px) {
+ 
   body {
     background-repeat: repeat-y;
+    overflow: auto;
   }
+
+  .intro-container {
+    padding: 2rem 0rem 2rem 0rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .project-container {
+    padding: 0.5rem;
+    margin: 0;
+    margin-bottom: 8rem;
+    flex-direction: column;
+  }
+
+  .project-img {
+      max-height: 400px;
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+
 }
