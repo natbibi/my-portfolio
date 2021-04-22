@@ -1,17 +1,17 @@
 const projectData = [
     { 
         id: 1,
-        name: "Gossip Girls",
+        name: "Anonymous Journaling App - XOXO",
         description: "",
         technologies: "",
         github: "https://github.com/natbibi/gossip-girl-xoxo",
         netlify: "https://gossip-girl-xoxo.netlify.app/",
-        image: "http:"
+        image: "https://user-images.githubusercontent.com/58271566/115692587-08336400-a357-11eb-942b-3774b904e0c7.gif",
     },
 
     { 
         id: 2,
-        name: "Habité",
+        name: "Habit Tracker - Habité",
         description: "",
         technologies: "",
         github: "https://github.com/natbibi/co-habiters",
@@ -26,7 +26,7 @@ const projectData = [
         technologies: "",
         github: "https://github.com/natbibi/music-react",
         netlify: "https://beliebers.netlify.app/",
-        image: "http:"
+        image: "https://user-images.githubusercontent.com/58271566/115690469-fea8fc80-a354-11eb-9215-eaf38b98c5c0.png"
     },
 
     { 
