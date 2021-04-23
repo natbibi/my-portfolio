@@ -11,7 +11,7 @@ nav {
 }
 
 a {
-    color: rgb(139, 53, 250);
+    color: black;
     text-decoration: none;
 }
 
@@ -27,9 +27,8 @@ a:hover {
   }
 
 .current {
-    color: black;
+    color: rgb(139, 53, 250);
     font-weight: bolder;
-    background-color: black;
 }
 
 button#back-button{
