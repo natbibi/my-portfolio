@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/286cf9ba-4749-4316-8fb1-050292679350/deploy-status)](https://app.netlify.com/sites/nat-portfolio/deploys)
 
-A portfolio for Natalie Pang made in react. Find out more about me, an overview of my best projects to date, and my contact details. 
+My portfolio made in react. Find out more about me, an overview of my best projects to date, and my contact details. 
 
 # Installation & Usage
 
