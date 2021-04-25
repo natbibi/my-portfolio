@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 
 
-const ProjectCards = ({ projectData }) => {
-
-
+const ProjectCards = ({ projectData, handleSelect }) => {
+console.log(handleSelect)
   return (
     <main className="project-container">
       <div>
@@ -15,7 +14,7 @@ const ProjectCards = ({ projectData }) => {
       </div>
 
       <div>
-        <img src={projectData.image} alt={projectData.alt} className="project-img" />
+        <img src={projectData.image} alt={projectData.alt} className="project-img" onClick={() => handleSelect(projectData.id)}/>  
       </div>
 
     </main >
