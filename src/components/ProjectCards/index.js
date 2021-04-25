@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel'
 
 
 const ProjectCards = ({ projectData, handleSelect }) => {
-console.log(handleSelect)
   return (
     <main className="project-container">
       <div>
