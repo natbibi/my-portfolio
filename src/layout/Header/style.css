@@ -4,13 +4,14 @@ nav {
     justify-content: space-around;
     align-items: center;
     color: grey;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0.5rem;
+    z-index: 1;
 }
 
 a {
-    color: rgb(139, 53, 250);
+    color: rgb(131, 36, 255);
     text-decoration: none;
 }
 
@@ -23,12 +24,12 @@ a:hover {
     transition-duration: 0.7s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    color: rgb(131, 36, 255);
   }
 
 .current {
-    color: black;
     font-weight: bolder;
-    background-color: black;
+    border-bottom: 2px solid;
 }
 
 button#back-button{
@@ -41,6 +42,5 @@ button#back-button{
     nav {
         margin-top: 10px;
         width: 80%;
-        position: absolute;
     }
 }
