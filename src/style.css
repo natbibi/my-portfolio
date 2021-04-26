@@ -15,6 +15,7 @@ body {
   background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
