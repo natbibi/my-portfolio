@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Dosis', sans-serif;
-font-family: 'DotGothic16', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Dosis', sans-serif; */
 
 * {
   box-sizing: border-box;
@@ -18,7 +17,7 @@ body {
   background-attachment: fixed;
   font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
-  overflow-x: auto;
+  overflow-y: auto;
   max-width: 100%;
   max-height: 100%;
   padding: 1rem;
@@ -47,12 +46,32 @@ h5 {
   text-align: center;
 }
 
+.tech-icons {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: flex-end;
+}
+
+.tech-icon i, svg {
+  font-size: 3rem;
+  padding-bottom: 4px;
+}
+
+.tech-icon {
+  display: flex;
+  flex-basis: 180px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects-container{
   position: relative; 
   width: 100%;
   /* box-sizing: border-box; */
   margin: 0 auto; 
-  padding: 4rem;  
+  padding: 4rem 4rem 0rem 4rem;  
   display: flex;
   flex-direction: column;
 }
@@ -74,9 +93,17 @@ p.project-description {
   padding-right: 12px;
 }
 
+p.project-technologies {
+  font-family: 'Roboto Mono', monospace;
+  font-size: smaller;
+  max-width: 400px;
+  padding-right: 12px;
+  color: rgb(90, 90, 90)
+}
+
 .project-img {
   max-width: 600px;
-  max-height: 500px;
+  max-height: 450px;
   border-radius: 10px;
   border: 3px solid rgb(250, 206, 237);
 }
@@ -106,21 +133,43 @@ button.visit-website, button.visit-repo {
   border: none;
   border-radius: 3px;
   padding: 8px;
+  margin-top: 30px;
   margin-right: 8px;
 }
 
 .scroll-to-top {
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-button.scroll-up, .fa-angle-double-up {
-  font-size: 5rem;
+button.scroll-up, .fa-chevron-up{
+  font-size: 2rem;
   border: none;
   background: none;
+  padding: 20px;
+  margin-bottom: 10px;
+  animation: hover-vertical 2s ease infinite;
+  position: relative;
 }
 
-.visit-website:hover, .visit-repo:hover{
+@keyframes hover-vertical {
+  0%,
+		100% {
+    top: 0;
+  }
+
+  50% {
+    top: 20px;
+  }
+}
+
+.scroll-to-top:hover {
+  transform:scale(1.002);
+  color: rgb(70, 70, 70);
+}
+
+.visit-website:hover, .visit-repo:hover {
   transform: scale(1.05);
 }
 
@@ -157,5 +206,4 @@ i.fa-external-link-alt {
       height: auto;
       margin-top: 1rem;
     }
-
 }
