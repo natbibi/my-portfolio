@@ -28,7 +28,7 @@ export default function ScrollToTop() {
   return (
     <div className="scroll-to-top">
       {isVisible &&
-        <button className="scroll-up" onClick={scrollToTop}><i className="fas fa-angle-double-up"></i></button>}
+        <button className="scroll-up" onClick={scrollToTop}><i className="fas fa-chevron-up"></i></button>}
     </div>
   );
 }
