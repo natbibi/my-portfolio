@@ -3,6 +3,10 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    animation: intro-load 300ms ease-in 600ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
 }
 
 .container .card {
