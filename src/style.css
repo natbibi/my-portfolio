@@ -57,6 +57,7 @@ h5 {
 .tech-icon i, svg {
   font-size: 3rem;
   padding-bottom: 4px;
+  color: rgb(49, 49, 49);
 }
 
 .tech-icon {
@@ -65,6 +66,10 @@ h5 {
   padding-bottom: 20px;
   flex-direction: column;
   align-items: center;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
 }
 
 .projects-container{
@@ -104,9 +109,10 @@ p.project-technologies {
 
 .project-img {
   max-width: 600px;
-  max-height: 450px;
+  max-height: 430px;
   border-radius: 10px;
   border: 3px solid rgb(250, 206, 237);
+  cursor: pointer;
 }
 
 .project-img:hover {
@@ -144,7 +150,7 @@ button.visit-website, button.visit-repo {
   right: 0;
 }
 
-button.scroll-up, .fa-chevron-up{
+button.scroll-up, .fa-chevron-up, #back-button {
   font-size: 2rem;
   border: none;
   background: none;
