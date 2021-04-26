@@ -33,6 +33,22 @@ body {
   flex-direction: column;
   align-items: center;
   /* border: solid 2px orange; */
+  animation: intro-load 300ms ease-in 300ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+@keyframes intro-load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -80,6 +96,10 @@ h5 {
   padding: 4rem 4rem 0rem 4rem;  
   display: flex;
   flex-direction: column;
+  animation: intro-load 300ms ease-in 600ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
 }
 
 .project-container {
