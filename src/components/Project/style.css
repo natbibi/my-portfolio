@@ -1,43 +1,11 @@
-.skills-container {
+.main-projects {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* width */
-::-webkit-scrollbar {
-    height: 1.75rem;
-    width: 1.75rem;
-}
-  
-  /* Track */
-::-webkit-scrollbar-track {
-    /* box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px; */
-}
-   
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    width: 68px;
-    background-image: url("https://i.pinimg.com/originals/b0/da/cd/b0dacd0bb277315b8582d2d0e07d62a8.gif"),
-      linear-gradient(
-        90deg,
-        transparent,
-        rgb(255, 125, 255),
-        rgb(148, 148, 255),
-        rgb(255, 137, 255),
-        transparent
-      );
-      background-position: right center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: contain, contain;
-}
-  
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-
+    display: flex;
+    flex-direction: row-reverse;
   }
-
+  
 .proj-wrapper {
     overflow-x: scroll;
     white-space: nowrap;
@@ -56,3 +24,25 @@
     border: 3px solid rgb(250, 206, 237);
     cursor: pointer;
 }
+
+::-webkit-scrollbar {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    width: 68px;
+    background-image: url("https://i.pinimg.com/originals/b0/da/cd/b0dacd0bb277315b8582d2d0e07d62a8.gif"),
+      linear-gradient(
+        90deg,
+        transparent,
+        rgb(255, 125, 255),
+        rgb(148, 148, 255),
+        rgb(255, 137, 255),
+        transparent
+      );
+      background-position: right center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain, contain;
+}
+  
