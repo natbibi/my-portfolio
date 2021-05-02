@@ -14,23 +14,26 @@ To run on your local machine:
 # Changelog
 1. Set up different pages, nav bar, heading and introduction :D
 2. Deploy to Netlify!
-3. Add dark mode toggle feature
+3. Add dark mode toggle feature (vanillajs version)
 4. Switch to React
 5. Set up new file structure
 6. Add components BackButton, ContactMe, ProjectCards
 8. Add project details and contact details
 9. Add media queries for responsiveness on mobile devices
 10. Create scroll to top button
+11. Add simple animations for page load and infinite animations for arrows
+12. Horizontal scrolling div for project items with paths set up /projects/${id}
+13. Cycling between projects with prev and next buttons
 
 # Bugs
 - [x] Responsiveness on mobile devices
 - [x] Nav bar hard to clicke when scrolled down (element overlap)
-- [ ] Footer on Home page not at bottom
+- [x] Footer on Home page not at bottom
 
 # Wins & Challenges
 
 ## Wins
-- Successfully added dark mode to portfolio!  
+- Successfully added dark mode to portfolio! (vanillajs version)
 - Smooth switchover from vanillajs over to react! Original portfolio can still be found on 'original' branch.  
 - Responsive on mobile devices!!
 
