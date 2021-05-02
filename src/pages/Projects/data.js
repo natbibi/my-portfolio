@@ -46,7 +46,7 @@ const projectData = [
         id: 5,
         name: "Let's Get Quizzical",
         description: "An online quiz game built in react with redux. A host can create a game which others can join (max 4 players). Users can choose how many questions, difficulty and the topic, fetching from OpenTrivia API. A winner is declared at the end of every game and scores are stored in a mongoDB database. ",
-        technologies: "react // redeux // socket.io // mongodb // html // css // js // express.js // opentrivia api // jest // react testing library",
+        technologies: "react // redux // socket.io // mongodb // html // css // js // express.js // opentrivia api // jest // react testing library",
         github: "https://github.com/pearlhamilton/Quizzical",
         netlify: "https://letsgetquizzical.netlify.app/",
         image: "https://user-images.githubusercontent.com/58271566/116745868-a24c7980-a9f3-11eb-8030-166b0d5532d3.gif",
