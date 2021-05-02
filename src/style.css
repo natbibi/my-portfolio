@@ -170,7 +170,7 @@ p.project-technologies {
   justify-content: center;
 }
 
-button.visit-website, button.visit-repo {
+button.visit-website, button.visit-repo, button.see-more {
   background: rgb(232, 169, 252);
   border: none;
   border-radius: 3px;
@@ -216,7 +216,7 @@ button.prev-button, .next-button {
   color: rgb(70, 70, 70);
 }
 
-.visit-website:hover, .visit-repo:hover {
+.visit-website:hover, .visit-repo:hover, .see-more:hover{
   transform: scale(1.05);
 }
 

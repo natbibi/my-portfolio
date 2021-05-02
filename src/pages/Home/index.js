@@ -1,33 +1,34 @@
 import React from 'react';
-import { SiRedux, SiPostgresql, SiMongodb, SiJest, SiFlask, SiDjango, SiAdobephotoshop } from "react-icons/si";
+import Typical from 'react-typical'
+import { useHistory } from 'react-router-dom';
 
-const Home = () =>
-    <>
-        <header className="intro-container">
-            <h1>👋🏼 About Me</h1>
-            <h5>Hello! I am a Business/Marketing grad currently training to be full-stack Software Engineer with futureproof. I discovered my biggest passions (so far) in piano 🎹,
-            active investing 📈and yoga 🧘🏻‍♀️. I live to travel and love to see the world 🌍 (29 countries and counting!). </h5>
-        </header>
-        <main className="projects-container">
-            {/* <h1 className="center-align">Skills</h1> */}
+const Home = () => {
+    const history = useHistory();
 
-            <div className="tech-icons center-align">
-                <div className="tech-icon"><i className="fab fa-html5"></i>html</div>
-                <div className="tech-icon"><i className="fab fa-css3-alt"></i>css</div>
-                <div className="tech-icon"><i className="fab fa-js-square"></i>javascript</div>
-                {/* <div className="tech-icon"><i className="fab fa-bootstrap"></i>bootstrap</div> */}
-                {/* <div className="tech-icon"><i className="fab fa-python"></i>python</div> */}
-                <div className="tech-icon"><i className="fab fa-node-js"></i>node.js</div>
-                <div className="tech-icon"><i className="fab fa-react"></i>react</div>
-                <div className="tech-icon"><SiRedux />redux</div>
-                <div className="tech-icon"><i className="fab fa-docker"></i>docker</div>
-                <div className="tech-icon"><SiPostgresql />postgres</div>
-                <div className="tech-icon"><SiMongodb />mongodb</div>
-                {/* <div className="tech-icon"><SiFlask />flask</div> */}
-                {/* <div className="tech-icon"><SiDjango />django</div> */}
-                <div className="tech-icon"><SiJest />jest</div>
-                <div className="tech-icon"><SiAdobephotoshop />photoshop</div>
-            </div>
-        </main>
-    </>
+    const handleClick = () => {
+        history.push('./about')
+    }
+
+    return (
+        <>
+            <header className="intro-container center-align" style={{ height: "70vh" }}>
+                <h1 style={{ fontSize: "60px" }}>Hi, my name is <span style={{ color: "hotpink", fontWeight: "bolder" }}>Natalie</span></h1>
+                <h5 style={{ fontSize: "25px" }}> <Typical
+                    steps={[
+                        'fullstack software engineer 💻', 1000,
+                        'earth explorer 🌍', 1000,
+                        'food enthusiast 🍱', 1000,
+                        'mixed martial artist 🥊', 1000,
+                    ]}
+                    loop={Infinity}
+                    wrapper="p"
+                />
+                </h5>
+                <button className="see-more" onClick={handleClick}>know more</button>
+            </header>
+        </>
+    )
+
+}
+
 export default Home;
