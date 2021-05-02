@@ -23,7 +23,7 @@ const ContactMe = () => {
                         <h3>
                             <a href="mailto: natalie.pang@me.com" target="_blank">natalie.pang@me.com</a>
                         </h3>
-                        <p>This is my personal email if you have questions or job opportunities.</p>
+                        <p>This is my personal email if you have questions, job opportunities, or just want to say hi!</p>
                     </div>
                 </div>
             </div>
