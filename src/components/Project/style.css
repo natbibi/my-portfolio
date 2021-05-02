@@ -1,11 +1,9 @@
 .main-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .proj-wrapper {
     overflow-x: scroll;
     white-space: nowrap;
@@ -23,6 +21,10 @@
     border-radius: 10px;
     border: 3px solid rgb(250, 206, 237);
     cursor: pointer;
+}
+
+.proj-img:hover {
+  transform: scale(1.02);
 }
 
 ::-webkit-scrollbar {

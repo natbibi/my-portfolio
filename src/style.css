@@ -18,7 +18,7 @@ body {
   background-size: cover;
   font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   max-width: 100%;
   max-height: 100%;
   padding: 1rem;
@@ -32,7 +32,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: solid 2px orange; */
   animation: intro-load 300ms ease-in 300ms;
   animation-fill-mode: forwards;
   transform: translateY(-20px);
@@ -102,6 +101,13 @@ h5 {
   opacity: 0;
 }
 
+.main-projects {
+  animation: intro-load 300ms ease-in 600ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
 .project-container {
   border: solid 2px purple;
   border-left: none;
@@ -110,9 +116,18 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   margin: 60px;
-  padding: 3rem;
+  padding: 2rem;
   background-color: rgba(255, 233, 243, 0.6);
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
 } 
+
+.proj-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 p.project-description {
   max-width: 400px;
@@ -170,14 +185,19 @@ button.visit-website, button.visit-repo {
   right: 0;
 }
 
-button.scroll-up, .fa-chevron-up, #back-button {
+button.scroll-up, .fa-chevron-up, #back-button, .fa-chevron-left, .fa-chevron-right {
   font-size: 2rem;
   border: none;
   background: none;
-  padding: 20px;
   margin-bottom: 10px;
   animation: hover-vertical 2s ease infinite;
   position: relative;
+}
+
+button.prev-button, .next-button {
+  font-size: 2rem;
+  border: none;
+  background: none;
 }
 
 @keyframes hover-vertical {
