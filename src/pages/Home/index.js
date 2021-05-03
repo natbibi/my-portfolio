@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <header className="intro-container center-align" style={{ height: "70vh" }}>
-                <h1 style={{ fontSize: "60px" }}>Hi, my name is <span style={{ color: "hotpink", fontWeight: "bolder" }}>Natalie</span></h1>
+                <h1 style={{ fontSize: "70px" }}>Hi, I'm <span style={{ color: "hotpink", fontWeight: "bolder" }}>Natalie</span></h1>
                 <h5 style={{ fontSize: "25px" }}> <Typical
                     steps={[
                         'fullstack software engineer 💻', 1000,
@@ -24,7 +24,7 @@ const Home = () => {
                     wrapper="p"
                 />
                 </h5>
-                <button className="see-more" onClick={handleClick}>know more</button>
+                <button style={{ color: "rgb(131, 36, 255)", marginRight: "0" }} className="see-more" onClick={handleClick}>know more</button>
             </header>
         </>
     )
