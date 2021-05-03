@@ -9,8 +9,8 @@ const ProjectCards = ({ projectData, handleSelect }) => {
         <h3>{projectData.name}</h3>
         <p className="project-description">{projectData.description}</p>
         <p className="project-technologies">{projectData.technologies}</p>
-        <button className="visit-website"><a href={projectData.netlify} target="_blank">Website  <i className="fas fa-external-link-alt"></i></a></button>
-        <button className="visit-repo"><a href={projectData.github} target="_blank">Repo  <i className="fas fa-external-link-alt"></i></a></button>
+        <button className="visit-website"><a href={projectData.netlify} target="_blank">See Live  <i className="fas fa-external-link-alt"></i></a></button>
+        <button className="visit-repo"><a href={projectData.github} target="_blank">Source Code  <i className="fas fa-external-link-alt"></i></a></button>
       </div>
 
       <div>

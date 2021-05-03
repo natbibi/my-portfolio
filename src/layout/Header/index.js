@@ -9,6 +9,7 @@ const Header = () => {
         <nav role="navigation">
             {/* <BackButton /> */}
             <NavLink exact to="/" activeClassName="current">Home</NavLink>
+            <NavLink to="/about" activeClassName="current">About</NavLink>
             <NavLink to="/projects" activeClassName="current">Projects</NavLink>
             <NavLink to="/contact" activeClassName="current">Contact</NavLink>
         </nav>

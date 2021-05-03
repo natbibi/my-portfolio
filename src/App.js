@@ -16,6 +16,9 @@ function App(){
           <Route exact path="/">
             <Pages.Home />
           </Route>
+          <Route path="/about">
+            <Pages.About />
+          </Route>
           <Route path="/projects">
             <Pages.Projects />
               </Route>
