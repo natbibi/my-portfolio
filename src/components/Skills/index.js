@@ -16,17 +16,17 @@ const Skills = () => {
             <div className="tech-icon"><i className="fab fa-css3-alt"></i>css</div>
             <div className="tech-icon"><i className="fab fa-js-square"></i>javascript</div>
             {/* <div className="tech-icon"><i className="fab fa-bootstrap"></i>bootstrap</div> */}
-            {/* <div className="tech-icon"><i className="fab fa-python"></i>python</div> */}
             <div className="tech-icon"><i className="fab fa-node-js"></i>node.js</div>
             <div className="tech-icon"><i className="fab fa-react"></i>react</div>
-            <div className="tech-icon"><SiRedux />redux</div>
+            {/* <div className="tech-icon"><SiRedux />redux</div> */}
             <div className="tech-icon"><i className="fab fa-docker"></i>docker</div>
             <div className="tech-icon"><SiPostgresql />postgres</div>
             <div className="tech-icon"><SiMongodb />mongodb</div>
-            {/* <div className="tech-icon"><SiFlask />flask</div> */}
-            {/* <div className="tech-icon"><SiDjango />django</div> */}
+            <div className="tech-icon"><i className="fab fa-python"></i>python</div>
+            <div className="tech-icon"><SiFlask />flask</div>
+            <div className="tech-icon"><SiDjango />django</div>
             <div className="tech-icon"><SiJest />jest</div>
-            <div className="tech-icon"><SiAdobephotoshop />photoshop</div>
+            {/* <div className="tech-icon"><SiAdobephotoshop />photoshop</div> */}
         </div>
     </main>
 </>
