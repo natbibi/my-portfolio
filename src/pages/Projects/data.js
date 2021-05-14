@@ -26,7 +26,7 @@ const projectData = [
         name: "Belieber",
         description: "A react website to discover all about Justin Bieber; including albums, bio, photos and song lyrics from an API. There is also a quiz where you can test your JB knowlege and see if you are a true fan!",
         technologies: "react // react-bootstrap // lyrics.ovh api // html // css // javascript // jest // react testing library",
-        github: "https://github.com/natbibi/music-react",
+        github: "https://github.com/natbibi/belieber",
         netlify: "https://beliebers.netlify.app/",
         image: "https://user-images.githubusercontent.com/58271566/115690469-fea8fc80-a354-11eb-9215-eaf38b98c5c0.png",
         alt: "a screenshot to show an overview of Justin Bieber fanpage website"
@@ -45,12 +45,21 @@ const projectData = [
     {
         id: 5,
         name: "Let's Get Quizzical",
-        description: "An online quiz game built in react with redux. A host can create a game which others can join (max 4 players). Users can choose how many questions, difficulty and the topic, fetching from OpenTrivia API. A winner is declared at the end of every game and scores are stored in a mongoDB database. ",
+        description: "An online quiz game built in react with redux. A host can create a game which others can join (max 4 players). Users can choose how many questions, difficulty and the topic, fetching from OpenTrivia API. A winner is declared at the end of every game and scores are stored in a mongoDB database.",
         technologies: "react // redux // socket.io // mongodb // html // css // js // express.js // opentrivia api // jest // react testing library",
-        github: "https://github.com/pearlhamilton/Quizzical",
+        github: "https://github.com/natbibi/quizzical",
         netlify: "https://letsgetquizzical.netlify.app/",
         image: "https://user-images.githubusercontent.com/58271566/116745868-a24c7980-a9f3-11eb-8030-166b0d5532d3.gif",
         alt: "a gif to show a short demo of how quizzical works"
+    },
+    {
+        id: 6,
+        name: "Lenny Kravitz",
+        description: "A Lenny Kravitz fan page built in fullstack with react on the client, flask on the server and is connected to an email service using flask-mail. Users can join the mailing list, view all albums and suggest a name and release date for a new album. Subscribers will receive a welcome email and updates of new albums.",
+        technologies: "react // flask // flask-mail // html // css // js // python // pytest // jest // react testing library",
+        github: "https://github.com/natbibi/Lenny_Kravitz/tree/main",
+        image: "https://user-images.githubusercontent.com/58271566/118308160-8b258580-b4e3-11eb-900a-9bd4d3afaa81.gif",
+        alt: "Lenny Kravitz fan page demo"
     },
 
 ];
