@@ -8,12 +8,11 @@ const Projects = () => {
 
     const handleSelect = (id) => {
         history.push(`projects/${(id)}`)
-        console.log(id)
     }
 
     const prevProj = (id) => {
         if (id.id <= 1) {
-            history.push(`/projects/5`)
+            history.push(`/projects/7`)
         } else {
             history.push(`/projects/${(id.id - 1)}`)
         }
