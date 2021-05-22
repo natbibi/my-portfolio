@@ -15,7 +15,7 @@ const projectData = [
         name: "Habité",
         description: "A habit tracker that allows users to register for their own account. They can easily login and record their progress for any habits they wish to track, mark habits as complete for the day, and see their most recent completion streaks.",
         technologies: "html // css // javascript // postgres // jwt // bcrypt // express.js // jest",
-        github: "https://github.com/natbibi/co-habiters",
+        github: "https://github.com/natbibi/habite",
         netlify: "https://habite.netlify.app/",
         image: "https://user-images.githubusercontent.com/58271566/114206025-cf58bf80-9952-11eb-9d02-2afd378417ab.png",
         alt: "a screenshot to show an overview of Habité habit tracker's main features"
@@ -57,9 +57,20 @@ const projectData = [
         name: "Lenny Kravitz",
         description: "A Lenny Kravitz fan page built in fullstack with react on the client, flask on the server and is connected to an email service using flask-mail. Users can join the mailing list, view all albums and suggest a name and release date for a new album. Subscribers will receive a welcome email and updates of new albums.",
         technologies: "react // flask // flask-mail // html // css // js // python // pytest // jest // react testing library",
-        github: "https://github.com/natbibi/Lenny_Kravitz/tree/main",
+        github: "https://github.com/natbibi/lennykravitz",
         image: "https://user-images.githubusercontent.com/58271566/118308160-8b258580-b4e3-11eb-900a-9bd4d3afaa81.gif",
-        alt: "Lenny Kravitz fan page demo"
+        alt: "Lenny Kravitz fan page demo",
+        display: "none"
+    },
+    {
+        id: 7,
+        name: "JobbaHunt",
+        description: "JobbaHunt is a job search application built in full stack with react, django REST framework, and is connected to PostgreSQL database and AWS. Users can create an account, search jobs on Reed API, save jobs, update progress of job applications. Interactions with the app allows the user to collect points that can be exchanged for rewards.",
+        technologies: "react // django // django rest framework // postgres // jwt // aws // html // css // js // python // reed api // jest // react testing library",
+        github: "https://github.com/natbibi/jobbahunt",
+        netlify: "https://jobbahunt.netlify.app/",
+        image: "https://user-images.githubusercontent.com/58271566/119194826-96485a80-ba7b-11eb-9fef-efdb83e4b007.gif",
+        alt: "jobbahunt job search app demo",
     },
 
 ];
