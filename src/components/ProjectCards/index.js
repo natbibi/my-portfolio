@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import Carousel from 'react-bootstrap/Carousel'
-
+import React from 'react';
 
 const ProjectCards = ({ projectData, handleSelect }) => {
   return (
@@ -16,7 +14,6 @@ const ProjectCards = ({ projectData, handleSelect }) => {
       <div>
         <img src={projectData.image} alt={projectData.alt} className="project-img" onClick={() => handleSelect(projectData.id)} />
       </div>
-
     </main >
   )
 }
