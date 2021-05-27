@@ -60,7 +60,7 @@ const Projects = () => {
                                     <h5>A selection of my best work. Click for more details. More projects available on <a href={'./contact'}>Github.</a></h5>
                                 </header>
                                 <main className="main-projects">
-                                    {loading ? <p>loading... </p> :
+                                    {loading ? <p>loading... please wait or refresh </p> :
                                         <div className="proj-wrapper">{renderProjects}</div>}
                                 </main>
                             </>)} />
@@ -68,7 +68,7 @@ const Projects = () => {
                         {/* Dynamic route params */}
                         <Route path={"/projects/:id"} render={({ match }) => (
                             <div className="projects-container">
-                                {loading ? <p>loading... </p> :
+                                {loading ? <p style={{textAlign: "center", marginTop: "3rem"}}>loading... please wait or refresh </p> :
                                     <div className="proj-nav">
                                         <button className="prev-button" onClick={() => prevProj(project[match.params.id - 1])}><i class="fas fa-chevron-left"></i></button>
                                         <ProjectCards projectData={project[match.params.id - 1]} handleSelect={() => { }} />
