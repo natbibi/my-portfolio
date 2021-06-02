@@ -70,9 +70,9 @@ const Projects = () => {
                             <div className="projects-container">
                                 {loading ? <p style={{textAlign: "center", marginTop: "3rem"}}>loading... please wait or refresh </p> :
                                     <div className="proj-nav">
-                                        <button className="prev-button" onClick={() => prevProj(project[match.params.id - 1])}><i class="fas fa-chevron-left"></i></button>
+                                        <button className="prev-button" onClick={() => prevProj(project[match.params.id - 1])}><i className="fas fa-chevron-left"></i></button>
                                         <ProjectCards projectData={project[match.params.id - 1]} handleSelect={() => { }} />
-                                        <button className="next-button" onClick={() => nextProj(project[match.params.id])}><i class="fas fa-chevron-right"></i></button>
+                                        <button className="next-button" onClick={() => nextProj(project[match.params.id])}><i className="fas fa-chevron-right"></i></button>
                                     </div>
                                 }
                             </div>
