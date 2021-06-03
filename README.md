@@ -24,6 +24,8 @@ To run on your local machine:
 11. Add simple animations for page load and infinite animations for arrows
 12. Horizontal scrolling div for project items with paths set up /projects/${id}
 13. Cycling between projects with prev and next buttons
+14. Fetching projects switched from local data to my [REST API](https://github.com/natbibi/my-rest-api)
+15. Add responsive nav bar for mobile 
 
 # Bugs
 - [x] Responsiveness on mobile devices
