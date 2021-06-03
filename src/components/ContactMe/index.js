@@ -32,7 +32,7 @@ const ContactMe = () => {
                 <div className="face face1">
                     <div className="content">
                         <div className="icon">
-                            <i className="fa fa-twitter-square"></i>
+                            <i className="fab fa-linkedin"></i>
                         </div>
                     </div>
                 </div>
@@ -40,9 +40,10 @@ const ContactMe = () => {
                 <div className="face face2">
                     <div className="content">
                         <h3>
-                            <a href="https://twitter.com/" target="_blank">@</a>
+                            <a href="https://www.linkedin.com/in/natcodes/" target="_blank">/natcodes</a>
                         </h3>
-                        <p>This is where I follow my favourite topics and network with different social groups.</p>
+                        <p>This is my linkedin profile. Connect with me or reach out to me here!</p>
+                        {/* <p>This is where I follow my favourite topics and network with different social groups.</p> */}
                     </div>
                 </div>
             </div>
@@ -60,7 +61,7 @@ const ContactMe = () => {
                         <h3>
                             <a href="https://github.com/natbibi" target="_blank">@natbibi</a>
                         </h3>
-                        <p>This is where I share code and work on projects.</p>
+                        <p>This is where I share code and work on projects. Follow my progress!</p>
                     </div>
                 </div>
             </div>
