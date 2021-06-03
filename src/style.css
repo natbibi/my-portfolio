@@ -12,7 +12,8 @@ body {
   --text-color: darkslateblue;
   --transition-delay: 1s;
   
-  background: url(https://wallpapercave.com/wp/cAmaUYh.jpg);
+  /* background: url(https://wallpapercave.com/wp/cAmaUYh.jpg); */
+  background-image: linear-gradient(to bottom right, #C4DCEC, #babee2, #D1BEDB, #E9C6DC, #F3CCDB, #fad4c7, #F6EAC8, #EEF1CE);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -28,7 +29,7 @@ body {
   margin: 0;
   padding: 2rem 6rem 2rem 6rem;
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
