@@ -40,7 +40,7 @@ const ContactMe = () => {
                 <div className="face face2">
                     <div className="content">
                         <h3>
-                            <a href="https://www.linkedin.com/in/natcodes/" target="_blank">@natcodes</a>
+                            <a href="https://www.linkedin.com/in/natcodes/" target="_blank">/natcodes</a>
                         </h3>
                         <p>This is my linkedin profile. Connect with me or reach out to me here!</p>
                         {/* <p>This is where I follow my favourite topics and network with different social groups.</p> */}
