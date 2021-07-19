@@ -15,7 +15,7 @@ const Home = () => {
                 <h1 style={{ fontSize: "70px" }}>Hi, I'm <span style={{ color: "hotpink", fontWeight: "bolder" }}>Natalie</span></h1>
                 <h5 style={{ fontSize: "25px" }}> <Typical
                     steps={[
-                        'full-stack software engineer 💻', 1000,
+                        'full stack software engineer 💻', 1000,
                         'earth explorer 🌍', 1000,
                         'food enthusiast 🍱', 1000,
                         'mixed martial artist 🥊', 1000,
