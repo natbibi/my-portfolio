@@ -26,6 +26,7 @@ To run on your local machine:
 13. Cycling between projects with prev and next buttons
 14. Fetching projects switched from local data to my [REST API](https://github.com/natbibi/my-rest-api)
 15. Add responsive nav bar for mobile 
+16. Add [favicon](https://i.ibb.co/BBtpv7F/profilepic-copy.png)
 
 # Bugs
 - [x] Responsiveness on mobile devices
