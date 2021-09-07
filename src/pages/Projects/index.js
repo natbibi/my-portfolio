@@ -27,7 +27,7 @@ const Projects = () => {
 
     const prevProj = (id) => {
         if (id.id <= 1) {
-            history.push(`/projects/7`)
+            history.push(`/projects/8`)
         } else {
             history.push(`/projects/${(id.id - 1)}`)
         }
