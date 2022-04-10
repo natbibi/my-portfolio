@@ -26,7 +26,7 @@ body {
 
 .intro-container {
   margin: 0;
-  padding: 2rem 6rem 2rem 6rem;
+  padding: 2rem 6rem 1rem 6rem;
   width: 100%;
   margin-top: 5rem;
   display: flex;
@@ -52,6 +52,7 @@ body {
 
 h1 {
   margin-bottom: 50px;
+  font-size: 30px;
 }
 
 h3 {
@@ -87,12 +88,11 @@ h5 {
   transform: scale(1.1);
 }
 
-.projects-container{
+.projects-container {
   position: relative; 
   width: 100%;
-  /* box-sizing: border-box; */
   margin: 0 auto; 
-  padding: 4rem 4rem 0rem 4rem;  
+  padding: 2rem 4rem 0rem 4rem;  
   display: flex;
   flex-direction: column;
   animation: intro-load 300ms ease-in 600ms;

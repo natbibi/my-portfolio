@@ -6,7 +6,7 @@ const Home = () => {
     const history = useHistory();
 
     const handleClick = () => {
-        history.push('./about')
+        history.push('./projects')
     }
 
     return (
