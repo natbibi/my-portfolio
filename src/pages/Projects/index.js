@@ -3,23 +3,27 @@ import { useNavigate } from 'react-router-dom';
 import { Project, ScrollToTop } from '../../components'
 import axios from 'axios';
 
-const Projects = () => {
-    const [project, setProject] = useState([]);
-    const [error, setError] = useState("");
-    const [loading, setLoading] = useState(true);
+import projectData from './data'
 
-    useEffect(() => {
-        const fetchProjects = async () => {
-            try {
-                const { data } = await axios.get("https://nat-api.herokuapp.com/projects/")
-                setProject(data)
-                setLoading(false)
-            } catch (err) {
-                setError("Sorry, there's been error")
-            }
-        }
-        fetchProjects()
-    }, []);
+const Projects = () => {
+    const [project, setProject] = useState(projectData);
+    console.log(project)
+    // const [project, setProject] = useState([]);
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    // useEffect(() => {
+    //     const fetchProjects = async () => {
+    //         try {
+    //             const { data } = await axios.get("https://nat-api.herokuapp.com/projects/")
+    //             setProject(data)
+    //             setLoading(false)
+    //         } catch (err) {
+    //             setError("Sorry, there's been error")
+    //         }
+    //     }
+    //     fetchProjects()
+    // }, []);
 
     const handleSelect = (id) => {
         navigate(`${(id)}`)

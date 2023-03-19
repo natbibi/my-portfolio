@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+import projectData from '../../pages/Projects/data';
+
 const ProjectCards = () => {
-  const [project, setProject] = useState([]);
+  // const [project, setProject] = useState([]);
+  const [project, setProject] = useState(projectData);
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const { id } = useParams();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-      const fetchProjects = async () => {
-          try {
-              const { data } = await axios.get("https://nat-api.herokuapp.com/projects/")
-              setProject(data)
-              setLoading(false)
-          } catch (err) {
-              setError("Sorry, there's been error")
-          }
-      }
-      fetchProjects()
-  }, []);
+  // useEffect(() => {
+  //     const fetchProjects = async () => {
+  //         try {
+  //             const { data } = await axios.get("https://nat-api.herokuapp.com/projects/")
+  //             setProject(data)
+  //             setLoading(false)
+  //         } catch (err) {
+  //             setError("Sorry, there's been error")
+  //         }
+  //     }
+  //     fetchProjects()
+  // }, []);
 
   const handleSelect = (id) => {
       navigate(`${(id)}`)
@@ -28,17 +32,17 @@ const ProjectCards = () => {
 
   const prevProj = (id) => {
     if (id.id <= 1) {
-        navigate(`/8`)
+        navigate(`/projects/${project.length}`)
     } else {
-        navigate(`/${(id.id - 1)}`)
+        navigate(`/projects/${(id.id - 1)}`)
     }
 }
 
 const nextProj = (id) => {
     if (id === undefined) {
-        navigate(`/1`)
+        navigate(`/projects/1`)
     } else {
-        navigate(`/${(id.id)}`)
+        navigate(`/projects/${(id.id)}`)
     }
 }
 
@@ -47,7 +51,7 @@ const nextProj = (id) => {
     {loading ? <p style={{textAlign: "center", marginTop: "3rem"}}>loading... please wait or refresh </p> :
 
     <div className="proj-nav">
-      <button className="prev-button" onClick={() => prevProj(project[id.id - 1])}><i className="fas fa-chevron-left"></i></button>
+      <button className="prev-button" onClick={() => prevProj(project[id - 1])}><i className="fas fa-chevron-left"></i></button>
 
         <main className="project-container">
             <div>
@@ -63,7 +67,7 @@ const nextProj = (id) => {
             </div>
         </main >
 
-      <button className="next-button" onClick={() => nextProj(project[id.id])}><i className="fas fa-chevron-right"></i></button>
+      <button className="next-button" onClick={() => nextProj(project[id])}><i className="fas fa-chevron-right"></i></button>
     </div>
       
     }
