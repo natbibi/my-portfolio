@@ -1,16 +1,22 @@
 import React from 'react';
 import { Skills } from '../../components'
+import selfie from '../../../public/images/selfie.png'
 
 const About = () =>
     <>
         <header className="intro-container">
-            <h1>👋🏼 About Me</h1>
-            <p style={{ fontSize: "16px", textAlign: "justify" }}>Hello! I am a Software Engineer with 1 year experience, specialising in full stack development with front-end focus. Prior to this, I was part of a small e-commerce business organising digital marketing, website design and copywriting. I am enthusiastic about branding and user experience, and I enjoy creating user-friendly and accessible apps for all. I wish to create technologies that can increasing automation, efficiency and communication; and be part of the industry that impacts and improves every single individual's lives.
-            <br></br> <br></br>
-            In my free time, I focus my attention on learning and discovering new interests. I recently started self-learning piano, which I love to sing pop songs along to. I thoroughly enjoy managing my investment portfolio and discovering companies. For sports, I really like to watch and train MMA, practice yoga, and hike. I am passionate about traveling, exploring new cultures, and food. Having visited 33 countries so far, I would love to see the rest of the world!
-            </p>
+            <h1>👋🏼 natalie pang - full stack software engineer</h1>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-start"}}>
+                <img src={selfie} alt="selfie of Natalie" className="img-selfie" />
+                <p style={{ width: "50%", fontSize: "13px" }}><strong>As a Full Stack Software Engineer with two years of experience,</strong> I have gained expertise in developing user-friendly and accessible applications. Prior to this, I played a vital role in a small e-commerce business where I was responsible for organizing digital marketing, website design, and copywriting. My enthusiasm for branding and user experience reflects in my work, and I strive to create technologies that enhance automation, efficiency, and communication, positively impacting individuals' lives.   
+                <br></br> <br></br>
+                <strong>Apart from my professional endeavors,</strong> I am a lifelong learner and always eager to explore new interests. I spend my free time managing my investment portfolio, discovering new companies, and keeping up-to-date with the latest technology trends. Additionally, I enjoy engaging in physical activities such as bouldering, gym, yoga, and hiking. 
+                <br></br> <br></br>
+                <strong>I am also an avid traveler,</strong> having visited 35 countries so far, and passionate about exploring different cultures and cuisines. I aspire to continue traveling and experiencing the world, enriching my perspective and knowledge.
+                </p>
+            </div>
         </header>
-        <Skills />
+            <Skills />
 
     </>
 export default About;

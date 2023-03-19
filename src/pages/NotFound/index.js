@@ -1,14 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
-    const history = useHistory();
+    const navigate = useNavigate();
 
     return (
         <>
             <header className="intro-container">
                 <h1>🧐 Oops!</h1>
-                <h5>...can't find {history.location.pathname}!</h5>
+                <h5>...can't find {location.pathname}</h5>
             </header>
         </>
     )

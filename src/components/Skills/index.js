@@ -1,5 +1,5 @@
 import React from "react";
-import { SiRedux, SiPostgresql, SiMongodb, SiJest, SiFlask, SiDjango, SiAdobephotoshop } from "react-icons/si";
+import { SiRedux, SiPostgresql, SiMongodb, SiJest, SiFlask, SiDjango, SiDrupal, SiPhp, SiAdobephotoshop } from "react-icons/si";
 
 const Skills = () => {
 
@@ -17,8 +17,10 @@ const Skills = () => {
             <div className="tech-icon"><i className="fab fa-js-square"></i>javascript</div>
             {/* <div className="tech-icon"><i className="fab fa-bootstrap"></i>bootstrap</div> */}
             <div className="tech-icon"><i className="fab fa-node-js"></i>node.js</div>
-            <div className="tech-icon"><i className="fab fa-react"></i>react</div>
+            <div className="tech-icon"><i className="fab fa-react"></i>react.js</div>
             {/* <div className="tech-icon"><SiRedux />redux</div> */}
+            <div className="tech-icon"><SiPhp />php</div>
+            <div className="tech-icon"><SiDrupal />drupal</div>
             <div className="tech-icon"><i className="fab fa-docker"></i>docker</div>
             <div className="tech-icon"><SiPostgresql />postgres</div>
             <div className="tech-icon"><SiMongodb />mongodb</div>
