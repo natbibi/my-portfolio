@@ -57,13 +57,14 @@ const nextProj = (id) => {
             <div>
               <h3>{project[id - 1].name}</h3>
               <p className="project-description">{project[id - 1].description}</p>
+              <br></br>
               <p className="project-technologies">{project[id - 1].technologies}</p>
               <button style={{display: project[id - 1].display}} className="visit-website"><a href={project[id - 1].netlify} target="_blank">See Live  <i className="fas fa-external-link-alt"></i></a></button>
               <button className="visit-repo"><a href={project[id - 1].github} target="_blank">Source Code  <i className="fas fa-external-link-alt"></i></a></button>
             </div>
 
-            <div>
-              <img src={project[id - 1].image} alt={project[id - 1].alt} className="project-img" onClick={() => handleSelect(project[id - 1].id)} />
+            <div style={{ display: "flex", alignContent: "center", flexWrap: "wrap" }}>
+              <img src={project[id - 1].image} alt={project[id - 1].alt} className="project-img" />
             </div>
         </main >
 
