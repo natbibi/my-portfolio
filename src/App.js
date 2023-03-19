@@ -21,7 +21,7 @@ function App() {
         <Route path="/projects" element={<Pages.Projects />} />
           <Route path="/projects/:id" element={<ProjectCards />} />
         <Route path="/contact" element={<Pages.Contact />} />
-        {/* <Route path="*" element={<Pages.NotFound />} /> */}
+        <Route path="*" element={<Pages.NotFound />} />
       </Routes>
       <Footer />
     </>

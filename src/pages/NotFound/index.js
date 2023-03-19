@@ -8,7 +8,7 @@ const NotFound = () => {
         <>
             <header className="intro-container">
                 <h1>🧐 Oops!</h1>
-                <h5>...can't find {navigate.location.pathname}!</h5>
+                <h5>...can't find {location.pathname}</h5>
             </header>
         </>
     )
