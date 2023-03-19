@@ -21,10 +21,10 @@ const Nav = styled.nav`
 const Header = ({ open }) => {
     return (
         <Nav role="navigation" open={open}>
-            <NavLink exact to="/" activeClassName="current">Home</NavLink>
-            <NavLink to="/about" activeClassName="current">About</NavLink>
-            <NavLink to="/projects" activeClassName="current">Projects</NavLink>
-            <NavLink to="/contact" activeClassName="current">Contact</NavLink>
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
         </Nav>
     );
 }
