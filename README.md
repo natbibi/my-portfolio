@@ -27,11 +27,19 @@ To run on your local machine:
 14. Fetching projects switched from local data to my [REST API](https://github.com/natbibi/my-rest-api)
 15. Add responsive nav bar for mobile 
 16. Add [favicon](https://i.ibb.co/BBtpv7F/profilepic-copy.png)
+17. Update dependencies to keep up with the times and refactor
+18. Remove fetch from API because it takes time to load
+19. Small bug fixes and refresh the look
 
 # Bugs
 - [x] Responsiveness on mobile devices
 - [x] Nav bar hard to clicke when scrolled down (element overlap)
 - [x] Footer on Home page not at bottom
+- [x] Footer in the way of horizontal scroll in /projects
+- [x] Not found not working since v6 react router dom update
+- [x] Prev and next project buttons not working since v6 react router dom update
+- [x] React typical not supported - commented out for now (fixed using --force to install)
+- [x] Automate the year in copyright footer pls
 
 # Wins & Challenges
 
