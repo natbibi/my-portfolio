@@ -7,21 +7,58 @@ font-family: 'Dosis', sans-serif; */
   box-sizing: border-box;
 }
 
+:root {
+  --heading-color: #483d8b;
+  --text-color: #313131;
+  --accent-color: #ff69b4;
+  --project-background: rgba(255, 233, 243, 0.6);
+
+  --background: linear-gradient(
+    to bottom right,
+    #c4dcec,
+    #babee2,
+    #d1bedb,
+    #e9c6dc,
+    #f3ccdb,
+    #fad4c7,
+    #f6eac8,
+    #eef1ce
+  );
+}
+
+body[data-theme="dark"] {
+  --heading-color: #d896ff;;
+  --text-color: #f5f5f5;
+  --accent-color: #ff69b4;
+  --project-background: rgba(35, 30, 55, 0.8);
+
+  --background: linear-gradient(
+    to bottom right,
+    #151525,
+    #1c1b33,
+    #29213a,
+    #34233d,
+    #252035
+  );
+}
+
 body {
-  --accent-color: darkslateblue;
-  --text-color: darkslateblue;
-  --transition-delay: 1s;
-  
-  /* background: url(https://wallpapercave.com/wp/cAmaUYh.jpg); */
-  background-image: linear-gradient(to bottom right, #C4DCEC, #babee2, #D1BEDB, #E9C6DC, #F3CCDB, #fad4c7, #F6EAC8, #EEF1CE);
+  background: var(--background);
+  color: var(--text-color);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Dosis', sans-serif;
+
+  font-family: "Dosis", sans-serif;
   overflow-x: hidden;
   max-width: 100%;
-  max-height: 100%;
+  min-height: 100vh;
   padding: 1rem;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
 }
 
 .intro-container {
@@ -53,6 +90,13 @@ body {
 h1 {
   margin-bottom: 50px;
   font-size: 30px;
+  color: var(--heading-color);
+  line-height: 0.95;
+  margin: 0 0 2rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+
+  transition: color 0.4s ease;
 }
 
 h3 {
@@ -70,11 +114,12 @@ h5 {
   align-items: flex-end;
 }
 
-.tech-icon i, svg {
+.tech-icon i,
+.tech-icon svg {
   font-size: 1.5rem;
   padding-bottom: 4px;
   margin-top: 1.5rem;
-  color: rgb(49, 49, 49);
+  color: var(--text-color);
 }
 
 .tech-icon {
@@ -141,7 +186,7 @@ p.project-technologies {
   font-size: 12px;
   max-width: 400px;
   padding-right: 12px;
-  color: rgb(90, 90, 90)
+  color: var(--text-color);
 }
 
 .project-img {
@@ -184,10 +229,14 @@ p.project-technologies {
 button.visit-website, button.visit-repo, button.see-more {
   background: rgb(232, 169, 252);
   border: none;
-  border-radius: 3px;
-  padding: 8px;
+  border-radius: 999px;
+  padding: .7rem 1.5rem;
   margin-top: 30px;
   margin-right: 8px;
+  font-weight: 600;
+  width: fit-content;
+  font-size: 1.05rem;
+  cursor: pointer;
 }
 
 button.download-resume {

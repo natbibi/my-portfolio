@@ -10,21 +10,28 @@ nav {
     z-index: 1;
 }
 
-a {
-    color: rgb(131, 36, 255);
+nav a, nav button {
+    font: inherit;
+    font-weight: 600;
+    color: var(--heading-color);
     text-decoration: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    color: var(--heading-color);
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
-    transform: none;
     text-decoration: none;
-    border-bottom: 3px transparent solid;
-    transition: border  0.5s;
-    transition-property: border-color;
-    transition-duration: 0.7s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    color: rgb(131, 36, 255);
+    color: var(--accent-color);
   }
 
 .current {

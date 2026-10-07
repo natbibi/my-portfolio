@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import './style.css'
+import { DarkModeToggle } from '../../components/DarkModeToggle';
 
 const Nav = styled.nav`
     @media (max-width: 800px) {        
@@ -25,6 +26,7 @@ const Header = ({ open }) => {
             <NavLink to="/about">About</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/contact">Contact</NavLink>
+            <DarkModeToggle />
         </Nav>
     );
 }
