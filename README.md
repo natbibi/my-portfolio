@@ -30,6 +30,8 @@ To run on your local machine:
 17. Update dependencies to keep up with the times and refactor
 18. Remove fetch from API because it takes time to load
 19. Small bug fixes and refresh the look
+20. Uninstall and replace react-typical with react-type-animation
+21. Add dark mode! 🌓
 
 # Bugs
 - [x] Responsiveness on mobile devices
