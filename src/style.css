@@ -188,6 +188,9 @@ p.project-technologies {
   padding-right: 12px;
   color: var(--text-color);
 }
+strong.highlight {
+  color: var(--heading-color);
+}
 
 .project-img {
   max-width: 600px;
